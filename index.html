@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
 	<title>Voting Page</title>
@@ -13,24 +13,24 @@
 			<h1 class="page-title text-center"><b>Candidates</b></h1>
 			<div class="row">
 				<div class="col-md-3 col-sm-4">
-					<div class="profile-card">
-						<div class="profile-card_cover">
+					<div class="profile-card" th:field="*{firstname}">
+						<div class="profile-card_cover" th:field="*{firstname}">
 							<img src="images/bjp.jpeg" alt="">
 						</div>
 						<div class="profile-card_padding">
-							<div class="profile-card_image">
+							<div class="profile-card_image  " th:field="*{firstname}">
 								<img src="images/users/modi.jpg" alt="">
 							</div>
-							<div class="profile-card_details">
+							<div class="profile-card_details" th:field="*{firstname}">
 								<h3>Narendra Modi</h3>
-								<p class="text-muted">Bharatiya Janta Party</p>
+								<p class="text-muted" th:field="*{firstname}">Bharatiya Janta Party</p>
 							</div>
 							<div class="profile-card_social">
 								
 								
 
 
-<button class="button button1">Vote</button>
+<button class="button button1" th:field="*{firstname}">Vote</button>
 								
 							</div>
 						</div>
@@ -39,19 +39,19 @@
 
 				<div class="col-md-3 col-sm-4">
 					<div class="profile-card">
-						<div class="profile-card_cover">
+						<div class="profile-card_cover" th:field="*{firstname}">
 							<img src="images/cpim.png" alt="">
 						</div>
 						<div class="profile-card_padding">
-							<div class="profile-card_image">
+							<div class="profile-card_image" th:field="*{firstname}">
 								<img src="images/users/cpim.jpg" alt="">
 							</div>
-							<div class="profile-card_details">
+							<div class="profile-card_details" th:field="*{firstname}">
 								<h3>Jyoti Basu</h3>
 								<p class="text-muted">Left Front </p>
 							</div>
-							<div class="profile-card_social">
-								<button class="button button2">Vote</button>
+							<div class="profile-card_social" th:field="*{firstname}">
+								<button class="button button2" th:field="*{firstname}">Vote</button>
 								
 							</div>
 						</div>
@@ -60,19 +60,19 @@
 
 				<div class="col-md-3 col-sm-4">
 					<div class="profile-card">
-						<div class="profile-card_cover">
+						<div class="profile-card_cover" th:field="*{firstname}">
 							<img src="images/aap.jpeg" alt="">
 						</div>
 						<div class="profile-card_padding">
-							<div class="profile-card_image">
+							<div class="profile-card_image" th:field="*{firstname}">
 								<img src="images/users/arvind.jfif" alt="">
 							</div>
-							<div class="profile-card_details">
+							<div class="profile-card_details" th:field="*{firstname}">
 								<h3>Arvind Kejriwal</h3>
 								<p class="text-muted">Aam Admi Party</p>
 							</div>
-							<div class="profile-card_social">
-								<button class="button button3">Vote</button>
+							<div class="profile-card_social" th:field="*{firstname}">
+								<button class="button button3" th:field="*{firstname}">Vote</button>
 							</div>
 						</div>
 					</div>
@@ -80,20 +80,20 @@
 
 				<div class="col-md-3 col-sm-4">
 					<div class="profile-card">
-						<div class="profile-card_cover">
+						<div class="profile-card_cover" th:field="*{firstname}">
 							<img src="images/tmc.png" alt="">
 						</div>
 						<div class="profile-card_padding">
-							<div class="profile-card_image">
+							<div class="profile-card_image " th:field="*{firstname}">
 								<img src="images/users/mamata.jfif" alt="">
 							</div>
-							<div class="profile-card_details">
+							<div class="profile-card_details" th:field="*{firstname}"> 
 								<h3>Mamata Banerjee</h3>
 								<p class="text-muted">Trinomool Congress</p>
 							</div>
-							<div class="profile-card_social">
+							<div class="profile-card_social" th:field="*{firstname}">
 								
-								<button class="button button4">Vote</button>
+								<button class="button button4" th:field="*{firstname}">Vote</button>
 								
 							</div>
 						</div>
